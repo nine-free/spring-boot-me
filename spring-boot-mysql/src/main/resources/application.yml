@@ -1,0 +1,16 @@
+server:
+  port: 8003
+  tomcat:
+    uri-encoding: UTF-8
+
+#spring:
+#  datasource:
+#    druid:
+#      url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&
+#      username: root
+#      password: zhang1019
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+
+spring:
+  profiles:
+    include: druid

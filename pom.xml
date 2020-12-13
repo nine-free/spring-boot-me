@@ -29,6 +29,11 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <crm.spring.version>2.1.6.RELEASE</crm.spring.version>
         <junit.version>4.12</junit.version>
+        <mysql.version>8.0.11</mysql.version>
+        <druid.version>1.0.29</druid.version>
+        <slf4j.version>1.7.26</slf4j.version>
+        <fastJson.version>1.2.70</fastJson.version>
+        <commons.lang.version>3.9</commons.lang.version>
     </properties>
 
     <!-- 依赖关系 -->
@@ -47,19 +52,35 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.70</version>
+            <version>${fastJson.version}</version>
         </dependency>
         <!-- commons -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.9</version>
+            <version>${commons.lang.version}</version>
         </dependency>
         <!-- log -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.26</version>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
         </dependency>
         <!-- test -->
         <dependency>
